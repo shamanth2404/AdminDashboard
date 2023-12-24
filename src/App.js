@@ -5,6 +5,10 @@ import { CssBaseline, ThemeProvider } from "@mui/material";
 import Topbar from "./pages/global/Topbar";
 import Dashboard from './pages/dashboard/Dashboard'
 import Sidebar from './pages/global/Sidebar'
+import Team from './pages/team/Team'
+import Contacts from "./pages/contacts/Contacts";
+import Invoices from "./pages/invoices/Invoices";
+import Form from "./pages/form/Form";
 
 function App() {
   const [theme, colorMode] = useMode();
@@ -19,6 +23,10 @@ function App() {
             <Topbar />
             <Routes>
                 <Route path="/" element={<Dashboard />} />
+                <Route path="/team" element={<Team />} />
+                <Route path="/contacts" element={<Contacts />} />
+                <Route path="/invoices" element={<Invoices />} />
+                <Route path="/form" element={<Form />} />
             </Routes>
           </main>
         </div>
