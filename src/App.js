@@ -2,9 +2,9 @@ import { useState } from "react";
 import  { Routes,Route } from 'react-router-dom'
 import { ColorModeContext, useMode } from "./theme";
 import { CssBaseline, ThemeProvider } from "@mui/material";
-import Topbar from "./components/pages/global/Topbar";
-import Dashboard from './components/pages/dashboard/Dashboard'
-import Sidebar from './components/pages/global/Sidebar'
+import Topbar from "./pages/global/Topbar";
+import Dashboard from './pages/dashboard/Dashboard'
+import Sidebar from './pages/global/Sidebar'
 
 function App() {
   const [theme, colorMode] = useMode();
